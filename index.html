@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script>
+
+    </script>
+
+    <style>
+        /*
+ * Globals
+ */
+
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: #555;
+        }
+
+        h1, .h1,
+        h2, .h2,
+        h3, .h3,
+        h4, .h4,
+        h5, .h5,
+        h6, .h6 {
+            margin-top: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            color: #333;
+        }
+
+
+        /*
+         * Override Bootstrap's default container.
+         */
+
+        @media (min-width: 1200px) {
+            .container {
+                width: 970px;
+            }
+        }
+
+
+        /*
+         * Masthead for nav
+         */
+
+        .blog-masthead {
+            background-color: #428bca;
+            -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+            box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+        }
+
+        /* Nav links */
+        .blog-nav-item {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            font-weight: 500;
+            color: #cdddeb;
+        }
+        .blog-nav-item:hover,
+        .blog-nav-item:focus {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Active state gets a caret at the bottom */
+        .blog-nav .active {
+            color: #fff;
+        }
+        .blog-nav .active:after {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 0;
+            margin-left: -5px;
+            vertical-align: middle;
+            content: " ";
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid;
+            border-left: 5px solid transparent;
+        }
+
+
+        /*
+         * Blog name and description
+         */
+
+        .blog-header {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .blog-title {
+            margin-top: 30px;
+            margin-bottom: 0;
+            font-size: 60px;
+            font-weight: normal;
+        }
+        .blog-description {
+            font-size: 20px;
+            color: #999;
+        }
+
+
+        /*
+         * Main column and sidebar layout
+         */
+
+        .blog-main {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Sidebar modules for boxing content */
+        .sidebar-module {
+            padding: 15px;
+            margin: 0 -15px 15px;
+        }
+        .sidebar-module-inset {
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+        .sidebar-module-inset p:last-child,
+        .sidebar-module-inset ul:last-child,
+        .sidebar-module-inset ol:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* Pagination */
+        .pager {
+            margin-bottom: 60px;
+            text-align: left;
+        }
+        .pager > li > a {
+            width: 140px;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+
+        /*
+         * Blog posts
+         */
+
+        .blog-post {
+            margin-bottom: 60px;
+        }
+        .blog-post-title {
+            margin-bottom: 5px;
+            font-size: 40px;
+        }
+        .blog-post-meta {
+            margin-bottom: 20px;
+            color: #999;
+        }
+
+
+        /*
+         * Footer
+         */
+
+        .blog-footer {
+            padding: 40px 0;
+            color: #999;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-top: 1px solid #e5e5e5;
+        }
+        .blog-footer p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+
+</head>
+<body>
+<div class="blog-masthead">
+    <div class="container">
+        <nav class="blog-nav">
+            <a class="blog-nav-item active" href="#">Home</a>
+            <a class="blog-nav-item" href="#">New features</a>
+            <a class="blog-nav-item" href="#">Press</a>
+            <a class="blog-nav-item" href="#">New hires</a>
+            <a class="blog-nav-item" href="#">About</a>
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="blog-header">
+        <h1 class="blog-title">maven教程</h1>
+        <p class="lead blog-description">一个强大的项目继承tomcat管理工具</p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Maven的概述</h2>
+                <p class="blog-post-meta">七月 6, 2020 by <a href="#">Mark</a></p>
+
+                <p>构建代码工程、管理jar包、编译代码、自动运行单元测试、打包、生成报表、</p>
+                <hr>
+                <p>Maven 除了以程序构建能力为特色之外，还提供高级项目管理工具。由于 Maven 的缺省构建规则有较高的可重用性，所以常常用两三行 Maven 构建脚本就可以构建简单的项目。由于 Maven 的面向项目的方法，许多 Apache Jakarta 项目发文时使用 Maven，而且公司项目采用 Maven 的比例在持续增长。</p>
+                <blockquote>
+                    <p>
+                        Maven这个单词来自于意第绪语（犹太语），意为知识的积累，最初在Jakata Turbine项目中用来简化构建过程。当时有一些项目（有各自Ant build文件），仅有细微的差别，而JAR文件都由CVS来维护。于是希望有一种标准化的方式构建项目，一个清晰的方式定义项目的组成，一个容易的方式发布项目的信息，以及一种简单的方式在多个项目中共享JARs。
+                    </p>
+                </blockquote>
+                <h2>特点</h2>
+                <p>
+                    Maven是一个项目管理工具，它包含了一个项目对象模型 (Project Object Model)，一组标准集合，一个项目生命周期(Project Lifecycle)，一个依赖管理系统(Dependency Management System)，和用来运行定义在生命周期阶段(phase)中插件(plugin)目标(goal)的逻辑。当你使用Maven的时候，你用一个明确定义的项目对象模型来描述你的项目，然后Maven可以应用横切的逻辑，这些逻辑来自一组共享的（或者自定义的）插件。
+                </p>
+
+                <h3>生命周期 以及常用命令</h3>
+                <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594033339954&di=051b744539fd6af8c3a8722b314445d9&imgtype=0&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D1588892641%2C3773868259%26fm%3D214%26gp%3D0.jpg" class="img-thumbnail"></p>
+                <pre><code>
+                        常用命令
+                    - mvn clean: 删除所有编译信息
+                    - mvn compile:编译main
+                    - mvn test:编译test和main
+                    - mvn package：打包默认war包
+                    - mvn install：安装
+                    - mvn deploy: 发布，需要进行配置:
+                </code></pre>
+
+                <h3>创建maven</h3>
+                <p>
+                <ol>
+                <li>使用骨架</li>
+                <li>创建.webApp工程</li>
+                <li>配置pom.xml文件</li>
+                <li>groupId:公司和组织名称</li>
+                <li>artfactId:项目工程 maven</li>
+                <li>versoion:版本号</li>
+
+                 </ol>
+                </p>
+
+            </div><!-- /.blog-post -->
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">阿里云仓库xml文件配置</h2>
+                <code>
+                    <pre>
+                        <mirror>
+                            <id>nexus-aliyun</id>
+                            <mirrorOf>central</mirrorOf>
+                            <name>Nexus aliyun</name>
+                            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+                        </mirror>
+                    </pre>
+                </code>
+            </div><!-- /.blog-post -->
+
+<
+
+            <nav>
+                <ul class="pager">
+                    <li><a href="#">Previous</a></li>
+                    <li><a href="#">Next</a></li>
+                </ul>
+            </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+                <h4>About</h4>
+                <p><pre>***最终项目代码部分***:
+ 1. 核心代码部分
+2. 配置文件部分
+3. 核心代码测试部分
+ 4. 配置文件测试部分</pre> </p>
+            </div>
+            <div class="sidebar-module">
+                <h4>Archives</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">March 2014</a></li>
+                    <li><a href="#">February 2014</a></li>
+                    <li><a href="#">January 2014</a></li>
+                    <li><a href="#">December 2013</a></li>
+                    <li><a href="#">November 2013</a></li>
+                    <li><a href="#">October 2013</a></li>
+                    <li><a href="#">September 2013</a></li>
+                    <li><a href="#">August 2013</a></li>
+                    <li><a href="#">July 2013</a></li>
+                    <li><a href="#">June 2013</a></li>
+                    <li><a href="#">May 2013</a></li>
+                    <li><a href="#">April 2013</a></li>
+                </ol>
+            </div>
+
+            <div class="sidebar-module">
+                <h4>Elsewhere</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
